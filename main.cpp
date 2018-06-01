@@ -22,7 +22,7 @@ int main() {
     }
 
     server.sin_family = AF_INET;
-    server.sin_port = htons(8118);
+    server.sin_port = htons(8119);
     // lsof -Pn -i4 | grep 8117
     server.sin_addr.s_addr = INADDR_ANY;
     bzero(&server.sin_zero, 8);
